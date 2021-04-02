@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Source+Sans+Pro:wght@300&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* background-color: #113e40; */
+    background-image: url('virus.jpg');
+    background-size: cover;
+    color: #d8d8d8;
+}
+
+.header{
+    font-family: 'Cabin', sans-serif;
+}
+
+.backdrop{
+    backdrop-filter: blur(20px) brightness(0.6);
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-header{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inzidenz-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #d8d8d8 solid 1px;
+    border-radius: 2rem;
+    margin:  2em auto 2em auto;
+    height: 13rem;
+    width: 18rem;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.inzidenz-container-label{
+    font-size: 1.2em;
+}
+.inzidenz-container-number{
+    font-size: 4em;
+}
+.inzidenz-container-update{
+    font-size: .76em;
+}
