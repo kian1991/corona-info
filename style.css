@@ -14,6 +14,7 @@ body{
 }
 
 .backdrop{
+    -webkit-backdrop-filter: blur(20px) brightness(0.6);
     backdrop-filter: blur(20px) brightness(0.6);
 }
 
