@@ -4,7 +4,6 @@ const GEMEINDESCHLUESSEL = ['03403', '03405'];
 const getDivTemplate = (data) => {
   console.log(`data`, data);
   return `
-  <div class="inzidenz-container backdrop">
     <div class="inzidenz-container-label">${data.name}</div>
     <div class="inzidenz-container-number">${data.history[
       data.history.length - 1
@@ -19,7 +18,6 @@ const getDivTemplate = (data) => {
       )}</b> | 
       <b>${data.history[data.history.length - 2].weekIncidence.toFixed(2)}</b> 
     </div>
-  </div>
   `;
 };
 
@@ -28,6 +26,7 @@ const updateFields = async () => {
 
   for (const key of GEMEINDESCHLUESSEL) {
     const el = document.createElement('div');
+    el.classList.add('inzidenz-container', 'backdrop');
     el.innerHTML = getDivTemplate(allDistricts.data[key]);
     document.querySelector(`#main`).appendChild(el);
   }
