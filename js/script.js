@@ -1,5 +1,5 @@
 const API_URL = 'https://api.corona-zahlen.org/districts/history/incidence';
-const GEMEINDESCHLUESSEL = ['03403', '03405', '03455'];
+const GEMEINDESCHLUESSEL = ['03403', '03405', '05974', '03455'];
 
 const getDivTemplate = (data) => {
   console.log(`data`, data);
